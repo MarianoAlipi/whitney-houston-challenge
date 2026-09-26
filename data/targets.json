@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 2,
+  "notes": "dropAt is set here because it's been confirmed by ear for this exact video, down to the exact tenth of a second (189.9s). Ad-hoc presets (a pasted link or a local file) still ship with dropAt: null, since there's no way to know their timing in advance, and guessing one and presenting it as fact would be dishonest; those go through the app's 'mark the drop' flow the first time they're played instead. approxPauseStartSec seeds where playback starts when cueing up that flow for an unmeasured preset; it's left here, well before the drop, in case this preset's dropAt is ever cleared. metronomeOffsetSec shifts the optional lead-in metronome's beat grid earlier(-)/later(+): the grid is anchored to dropAt + metronomeOffsetSec, since the drop isn't guaranteed to land exactly on a downbeat. Left at 0 (no correction) rather than guessed, since this can only really be set correctly by listening to the metronome against the song and nudging it until the clicks lock in.",
+  "presets": [
+    {
+      "id": "yt-3JWTaaS7LdU",
+      "title": "Whitney Houston - I Will Always Love You (Official 4K Video)",
+      "source": "youtube",
+      "youtubeId": "3JWTaaS7LdU",
+      "approxDurationSec": 274,
+      "approxPauseStartSec": 178,
+      "dropAt": 189.9,
+      "metronomeOffsetSec": 0.2,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+/* Design tokens. Colour is used only where it carries information: don/ka
+   mark the two drum zones and double as the late/early axis; everything
+   else is neutral. No gradients, no drop shadows. */
+:root {
+  --ground: #0c0c0d;
+  --surface: #16161a;
+  --surface-2: #1e1e23;
+  --border: #2a2a30;
+
+  --text: #f2efea;
+  --muted: #8a8a93;
+  --muted-2: #57575e;
+
+  --don: #d8433c;     /* centre pad / "late" */
+  --don-dim: #5a2622;
+  --ka: #2e7dd1;      /* rim pad / "early" */
+  --ka-dim: #1f3b5c;
+
+  /* Grade-tier colors (game/judge.js): a separate axis from don/ka above,
+     which stay reserved for early/late direction. Ordered best to worst. */
+  --tier-gold: #e8b84b;
+  --tier-amazing: #d8dae3;
+  --tier-great: #2fbf9f;
+  --tier-good: #5fb85f;
+  --tier-ok: #7d8fa6;
+  --tier-close: #e2953d;
+  --tier-miss: #6b6b73;
+
+  /* Leaderboard rank medals: "1st/2nd/3rd on this leaderboard", a different
+     idea from a single attempt's grade tier above even where colors rhyme. */
+  --rank-gold: #e8b84b;
+  --rank-silver: #b8bcc7;
+  --rank-bronze: #c17a4a;
+
+  --focus: #f2efea;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+
+  --tv-body: 1.15rem;
+}
+
+@media (min-width: 1400px) {
+  :root { --tv-body: 1.35rem; }
+}
